@@ -6,7 +6,7 @@ video = cv2.VideoCapture("face_Clip.mp4")
 Face_Classifier = "Face.xml" #Face classifier xml file-this xml will check our image and check it against the data and if it passed then it will be classed as a Face
 FaceCheck = cv2.CascadeClassifier(Face_Classifier)
 
-# Reference https://gist.github.com/199995/37e1e0af2bf8965e8058a9dfa3285bc6#file-cars-xml
+# https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 while True:#As we are reading frames from a video it is better to use a while loop so it can go through each frame until the video ends
     (read_status, frame) = video.read()#This will capture the current frame from the video and call it frame and the read status returns if the read was successful
